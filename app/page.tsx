@@ -50,7 +50,7 @@ export default function DeshmukhProperties() {
     try {
       // Using EmailJS for immediate email sending
       const emailData = {
-        to_email: 'rajeevdewangan10@gmail.com',
+        to_email: 'deshmukhsunil266@gmail.com',
         from_name: formData.name,
         from_email: formData.email,
         message: formData.message,
@@ -119,7 +119,7 @@ export default function DeshmukhProperties() {
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
-      const mailtoLink = `mailto:rajeevdewangan10@gmail.com?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:deshmukhsunil266@gmail.com?subject=${subject}&body=${body}`;
       
       window.open(mailtoLink, '_blank');
       
@@ -414,50 +414,50 @@ export default function DeshmukhProperties() {
   
   // Land Properties - 4 distinct land/plot properties
   const landProperties = [
-    {
-      id: 1,
-      image: "/patora.png",
-      modalImage: "/patora.webp",
-      title: "Premium Residential Plot",
-      description: "Spacious residential plot in prime location with all amenities nearby. Perfect for building your dream home.",
-      price: "₹25,00,000",
-      location: "Raipur, Chhattisgarh",
-      size: "2,500 sq ft",
-      type: "Residential Plot"
-    },
-    {
-      id: 2,
-      image: "/dumardih.png",
-      modalImage: "/dumardih.webp",
-      title: "Agricultural Farmland",
-      description: "Fertile agricultural land perfect for farming with water facility and good soil quality. Ideal for organic farming.",
-      price: "₹18,50,000",
-      location: "Bilaspur, Chhattisgarh",
-      size: "5 acres",
-      type: "Agricultural Land"
-    },
-    {
-      id: 3,
-      image: "/kuthrel.png",
-      modalImage: "/kuthrel.webp",
-      title: "Commercial Plot",
-      description: "Strategic commercial plot near highway with high visibility. Perfect for retail shops, offices, or restaurants.",
-      price: "₹45,00,000",
-      location: "Durg, Chhattisgarh",
-      size: "3,200 sq ft",
-      type: "Commercial Plot"
-    },
-    {
-      id: 4,
-      image: "/utai.png",
-      modalImage: "/utai.webp",
-      title: "Industrial Land",
-      description: "Large industrial plot with excellent connectivity and infrastructure. Ready for manufacturing or warehouse setup.",
-      price: "₹75,00,000",
-      location: "Bhilai, Chhattisgarh",
-      size: "10 acres",
-      type: "Industrial Land"
-    }
+      {
+        id: 1,
+        image: "/patora.png",
+        modalImage: "/patora.webp",
+        title: "Residential & Commercial",
+        description: "Prime location plots on Utai to Patan 4 Lane Main Road. Perfect for both residential and commercial development.",
+        price: "₹25,00,000",
+        location: "Utai to Patan 4 Lane Main Road, Patora 1km left from the road",
+        size: "2,200-3,700 sq ft",
+        type: "Patora"
+      },
+      {
+        id: 2,
+        image: "/dumardih.png",
+        modalImage: "/dumardih.webp",
+        title: "Premium Farmhouse Plot",
+        description: "Spacious farmhouse plots with excellent soil quality and water facilities. Perfect for building your dream farmhouse.",
+        price: "₹18,50,000",
+        location: "Utai to Patan 4 Lane Main Road, Patora 1km left from the road",
+        size: "4,700-8,700 sq ft",
+        type: "Dumardih"
+      },
+      {
+        id: 3,
+        image: "/kuthrel.png",
+        modalImage: "/kuthrel.webp",
+        title: "Residential Plot",
+        description: "Conveniently located residential plots just 200m from the bus stand. Perfect for building your home with easy access to public transportation.",
+        price: "₹45,00,000",
+        location: "200m Away from Bus Stand, Kuthrel",
+        size: "750-1,800 sq ft",
+        type: "Kuthrel"
+      },
+      {
+        id: 4,
+        image: "/utai.png",
+        modalImage: "/utai.webp",
+        title: "Residential & Commercial",
+        description: "Versatile plots in Indira Nagar, Utai. Suitable for both residential and commercial development with excellent infrastructure and connectivity.",
+        price: "₹75,00,000",
+        location: "Indira Nagar, Utai",
+        size: "250-3,300 sq ft",
+        type: "Utai"
+      }
   ];
 
   // Building Properties - 4 distinct building properties
@@ -1231,15 +1231,17 @@ export default function DeshmukhProperties() {
                       />
                     </div>
                     <CardContent className="p-4 pt-2">
-                      <h3 className="text-2xl font-outfit text-neutral-800 mb-2">{property.title}</h3>
-                      <p className="text-md font-outfit text-neutral-600 mb-2 font-light">{property.description}</p>
-                      <p className="text-md font-outfit text-neutral-600 flex items-center mb-2 font-light">
-                        <MapPin className="w-4 h-4 mr-2" />
+                      <h3 className="text-2xl font-outfit text-neutral-800 mb-2 h-12 flex items-center">{property.title}</h3>
+                      <p className="text-md font-outfit text-neutral-600 mb-2 font-light h-16 flex items-start leading-relaxed">{property.description}</p>
+                      <p className="text-md font-outfit text-neutral-600 mb-2 font-light h-12 flex items-center">
                         {property.location}
                       </p>
-                      <div className="flex justify-between items-center">
+                      <div className="flex justify-between items-center h-8">
                         <p className="text-lg font-outfit text-neutral-600 font-semibold">{property.size}</p>
-                        <span className="text-sm font-outfit text-neutral-500 bg-neutral-200 px-2 py-1 rounded">{property.type}</span>
+                        <span className="text-sm font-outfit text-neutral-500 bg-neutral-200 px-2 py-1 rounded flex items-center">
+                          <MapPin className="w-3 h-3 mr-1" />
+                          {property.type}
+                        </span>
                       </div>
                     </CardContent>
                   </Card>
@@ -1268,16 +1270,18 @@ export default function DeshmukhProperties() {
                       onClick={() => setSelectedImage(property.modalImage || property.image || "/placeholder.svg")}
                     />
                   </div>
-                  <CardContent className="p-4 pt-2">
-                    <h3 className="text-2xl font-outfit text-neutral-800 mb-2">{property.title}</h3>
-                    <p className="text-sm font-outfit text-neutral-600 mb-2 font-light">{property.description}</p>
-                    <p className="text-sm font-outfit text-neutral-600 flex items-center mb-2 font-light">
-                      <MapPin className="w-4 h-4 mr-2" />
+                  <CardContent className="p-4 pt-0">
+                    <h3 className="text-2xl font-outfit text-neutral-800 mb-2 h-12 flex items-center">{property.title}</h3>
+                    <p className="text-sm font-outfit text-neutral-600 mb-2 font-light h-16 flex items-start leading-relaxed">{property.description}</p>
+                    <p className="text-sm font-outfit text-neutral-600 mb-2 font-light h-12 flex items-center">
                       {property.location}
                     </p>
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center h-8">
                       <p className="text-lg font-outfit text-neutral-600 font-semibold">{property.size}</p>
-                      <span className="text-sm font-outfit text-neutral-500 bg-neutral-200 px-2 py-1 rounded">{property.type}</span>
+                      <span className="text-sm font-outfit text-neutral-500 bg-neutral-200 px-2 py-1 rounded flex items-center">
+                        <MapPin className="w-3 h-3 mr-1" />
+                        {property.type}
+                      </span>
                     </div>
                   </CardContent>
                 </Card>
@@ -1415,15 +1419,14 @@ export default function DeshmukhProperties() {
                         <div 
                           className="w-full h-48 rounded-lg cursor-pointer hover:shadow-lg transition-all duration-200 overflow-hidden relative group"
                           onClick={() => {
-                            const address = encodeURIComponent("Risali to borsi 80 feet road Saraswati Kunj, Bhilai, Chhattisgarh");
-                            window.open(`https://www.google.com/maps/search/?api=1&query=${address}`, '_blank');
+                            window.open('https://maps.app.goo.gl/wb8SbWupwSqEX6X98', '_blank');
                           }}
                           style={{
                             border: '1.5px solid black'
                           }}
                         >
                           <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d597.1234567890123!2d81.6296!3d21.2514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda23be28229%3A0x163ee1204ff9e240!2sRaipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1234567890123"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d597.1234567890123!2d81.323834!3d21.154351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293b50f849b745%3A0xc564967f7a59d126!2sRisali%20Chandkhuri%20Rd%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1234567890123"
                             width="100%"
                             height="100%"
                             style={{ border: 0 }}
@@ -1459,7 +1462,7 @@ export default function DeshmukhProperties() {
                 }}>
                   <CardContent className="p-5">
                     <h4 className="text-2xl font-semibold text-neutral-800 mb-1 font-outfit text-center">Sunil Deshmukh</h4>
-                    <p className="text-neutral-500 mb-10 font-outfit text-center text-xs">Owner</p>
+                    <p className="text-neutral-500 mb-10 font-outfit text-center text-md">Owner</p>
                     <div className="space-y-10 text-neutral-600">
                       {/* First Number */}
                       <div className="text-center">
@@ -1812,11 +1815,11 @@ export default function DeshmukhProperties() {
                           onClick={async () => {
                             try {
                               if (navigator.clipboard && navigator.clipboard.writeText) {
-                                await navigator.clipboard.writeText('rajeevdewangan10@gmail.com');
+                                await navigator.clipboard.writeText('deshmukhsunil266@gmail.com');
                               } else {
                                 // Fallback for older browsers/mobile devices
                                 const textArea = document.createElement('textarea');
-                                textArea.value = 'rajeevdewangan10@gmail.com';
+                                textArea.value = 'deshmukhsunil266@gmail.com';
                                 textArea.style.position = 'fixed';
                                 textArea.style.left = '-999999px';
                                 textArea.style.top = '-999999px';
@@ -1834,7 +1837,7 @@ export default function DeshmukhProperties() {
                             } catch (error) {
                               toast({
                                 title: "Copy Failed",
-                                description: "Please manually copy: rajeevdewangan10@gmail.com",
+                                description: "Please manually copy: deshmukhsunil266@gmail.com",
                                 className: "bg-red-300 text-black",
                               });
                             }
