@@ -1,0 +1,6 @@
+# Ignore build caches
+.next/cache
+
+# Optional: also ignore local dev stuff
+node_modules
+.DS_Store
