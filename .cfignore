@@ -1,6 +1,8 @@
-# Ignore build caches
+# Ignore Next.js build cache
 .next/cache
 
-# Optional: also ignore local dev stuff
+# Ignore dev junk
 node_modules
+npm-debug.log
+yarn-error.log
 .DS_Store
