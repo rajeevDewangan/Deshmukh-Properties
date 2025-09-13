@@ -522,7 +522,7 @@ export default function DeshmukhProperties() {
               <div className="flex-shrink-0">
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg overflow-hidden border border-yellow-500">
                   <img 
-                    src="/Fav (2).png" 
+                    src="/logo.png" 
                     alt="Deshmukh Properties Logo" 
                     className="w-full h-full object-contain"
                   />
