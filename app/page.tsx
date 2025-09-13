@@ -441,7 +441,7 @@ export default function DeshmukhProperties() {
         image: "/kuthrel.png",
         modalImage: "/kuthrel.webp",
         title: "Residential Plot",
-        description: "Conveniently located residential plots just 200m from the bus stand. Perfect for building your home with easy access to public transportation.",
+        description: "A really good developing area with excellent growth potential. Conveniently located residential plots.",
         price: "₹45,00,000",
         location: "200m Away from Bus Stand, Kuthrel",
         size: "750-1,800 sq ft",
@@ -452,7 +452,7 @@ export default function DeshmukhProperties() {
         image: "/utai.png",
         modalImage: "/utai.webp",
         title: "Residential & Commercial",
-        description: "Versatile plots in Indira Nagar, Utai. Suitable for both residential and commercial development with excellent infrastructure and connectivity.",
+        description: "Versatile plots in Utai. Suitable for both residential and commercial development with excellent infrastructure and connectivity.",
         price: "₹75,00,000",
         location: "Indira Nagar, Utai",
         size: "250-3,300 sq ft",
@@ -605,7 +605,7 @@ export default function DeshmukhProperties() {
             <div className="space-y-4">
               <a
                 href="#home"
-                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-['Aeonic']"
+                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-pt-serif"
                 onClick={(e) => {
                   e.preventDefault();
                   setIsMobileMenuOpen(false);
@@ -618,7 +618,7 @@ export default function DeshmukhProperties() {
               </a>
               <a
                 href="#about"
-                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-['Aeonic']"
+                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-pt-serif"
                 onClick={(e) => {
                   e.preventDefault();
                   setIsMobileMenuOpen(false);
@@ -631,7 +631,7 @@ export default function DeshmukhProperties() {
               </a>
               <a
                 href="#properties"
-                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-['Aeonic']"
+                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-pt-serif"
                 onClick={(e) => {
                   e.preventDefault();
                   setIsMobileMenuOpen(false);
@@ -644,7 +644,7 @@ export default function DeshmukhProperties() {
               </a>
               <a
                 href="#contact"
-                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-['Aeonic']"
+                className="block text-3xl font-medium text-white hover:text-gray-200 transition-colors py-4 px-4 rounded-lg hover:bg-white hover:bg-opacity-10 font-pt-serif"
                 onClick={(e) => {
                   e.preventDefault();
                   setIsMobileMenuOpen(false);
@@ -895,7 +895,7 @@ export default function DeshmukhProperties() {
         </div>
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
-              <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-8xl font-bold text-gray-300 mb-10 px-2 font-['Aeonic']">
+              <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-8xl font-bold text-gray-300 mb-10 px-2 font-pt-serif md:font-['Aeonic']">
                 About Deshmukh Properties
               </h1>
               <p className="text-lg sm:text-xl text-neutral-300 max-w-3xl mx-auto px-4 font-outfit mt-8">
@@ -984,7 +984,7 @@ export default function DeshmukhProperties() {
                   >
                     <div className="h-full flex flex-col justify-between">
                       <h2 
-                        className="text-2xl md:text-4xl font-semibold text-white font-['Aeonic'] mb-4 text-right"
+                        className="text-2xl md:text-4xl font-semibold text-white font-pt-serif md:font-['Aeonic'] mb-4 text-right"
                         style={{
                           textShadow: '0 0 10px rgba(255, 255, 255, 0.2)',
                           filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))'
@@ -1029,7 +1029,7 @@ export default function DeshmukhProperties() {
                     >
                       <div className="h-full flex flex-col justify-between">
                         <h2 
-                          className="text-4xl md:text-4xl font-semibold text-white font-['Aeonic'] mb-6 text-right"
+                          className="text-4xl md:text-4xl font-semibold text-white font-pt-serif md:font-['Aeonic'] mb-6 text-right"
                           style={{
                             textShadow: '0 0 10px rgba(255, 255, 255, 0.2)',
                             filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))'
@@ -1076,7 +1076,7 @@ export default function DeshmukhProperties() {
                   >
                     <div className="h-full flex flex-col justify-between">
                       <h2 
-                        className="text-2xl md:text-4xl font-semibold text-white font-['Aeonic'] mb-4 text-right"
+                        className="text-2xl md:text-4xl font-semibold text-white font-pt-serif md:font-['Aeonic'] mb-4 text-right"
                         style={{
                           textShadow: '0 0 10px rgba(255, 255, 255, 0.2)',
                           filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))'
@@ -1125,7 +1125,7 @@ export default function DeshmukhProperties() {
                     >
                       <div className="h-full flex flex-col justify-between">
                         <h2 
-                          className="text-4xl md:text-4xl font-semibold text-white font-['Aeonic'] mb-6 text-right"
+                          className="text-4xl md:text-4xl font-semibold text-white font-pt-serif md:font-['Aeonic'] mb-6 text-right"
                           style={{
                             textShadow: '0 0 10px rgba(255, 255, 255, 0.2)',
                             filter: 'drop-shadow(0 0 10px rgba(255, 255, 255, 0.3))'
@@ -1193,7 +1193,7 @@ export default function DeshmukhProperties() {
         </div>
         <div className="max-w-8xl mx-4px px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-8xl font-bold text-neutral-800 mb-6 px-2 font-['Aeonic']">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-8xl font-bold text-neutral-800 mb-6 px-2 font-pt-serif md:font-['Aeonic']">
               Featured Properties
             </h1>
             <p className="text-lg sm:text-xl text-neutral-600 px-4 mx-2 sm:mx-0 font-outfit">
@@ -1203,7 +1203,7 @@ export default function DeshmukhProperties() {
 
           {/* Land Section */}
           <div className="mb-16">
-            <h2 className="text-5xl font-bold text-neutral-600 mb-8 text-center font-['Aeonic']">
+            <h2 className="text-4xl md:text-5xl font-bold text-neutral-600 mb-8 text-center font-pt-serif md:font-['Aeonic']">
               Land & Plots
             </h2>
             <div className="relative">
@@ -1232,7 +1232,7 @@ export default function DeshmukhProperties() {
                     </div>
                     <CardContent className="p-4 pt-2">
                       <h3 className="text-2xl font-outfit text-neutral-800 mb-2 h-12 flex items-center">{property.title}</h3>
-                      <p className="text-md font-outfit text-neutral-600 mb-2 font-light h-16 flex items-start leading-relaxed">{property.description}</p>
+                      <p className="text-md font-outfit text-neutral-600 mb-5 font-light h-16 flex items-start leading-relaxed">{property.description}</p>
                       <p className="text-md font-outfit text-neutral-600 mb-2 font-light h-12 flex items-center">
                         {property.location}
                       </p>
@@ -1292,7 +1292,7 @@ export default function DeshmukhProperties() {
 
           {/* Properties Section */}
           <div>
-            <h2 className="text-5xl font-bold text-neutral-600 mb-8 text-center font-['Aeonic']">
+            <h2 className="text-4xl md:text-5xl font-bold text-neutral-600 mb-8 text-center font-pt-serif md:font-['Aeonic']">
               Properties & Buildings
             </h2>
             <div className="relative">
@@ -1390,7 +1390,7 @@ export default function DeshmukhProperties() {
         <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#0F0E0E] rounded-t-4xl p-8 mt-2 md:p-12">
                           <div className="text-center mb-12">
-                <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-8xl font-bold text-white mb-4 px-2 font-['Aeonic']">Get In Touch</h2>
+                <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-8xl font-bold text-white mb-4 px-2 font-pt-serif md:font-['Aeonic']">Get In Touch</h2>
               <p className="text-md sm:text-xl text-neutral-400 mx-8 font-outfit">Ready to find your perfect property? Contact us today!</p>
             </div>
 

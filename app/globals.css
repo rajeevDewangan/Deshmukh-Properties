@@ -213,6 +213,12 @@
     font-weight: 600;
   }
   
+  /* PT Serif font for mobile navbar titles */
+  .font-pt-serif {
+    font-family: var(--font-pt-serif), serif;
+    font-weight: 400;
+  }
+  
   /* Prevent horizontal scroll */
   html {
     overflow-x: hidden;
